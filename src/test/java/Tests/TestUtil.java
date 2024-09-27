@@ -2,6 +2,7 @@ package Tests;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
