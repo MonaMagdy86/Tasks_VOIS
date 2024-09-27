@@ -12,14 +12,12 @@ public class BookingPage extends PageBase {
 
     By cityFrom = By.id("fromCity_chosen");
     By searchCityFrom = By.xpath("//input[@placeholder=\"Search Your City Name\"]");
-   // By clickOnCityFrom = By.xpath("//li[@class=\"active-result\" and text()='CHIKKAMAGALURU']");
     By results = By.xpath("//ul[@class=\"chosen-results\"]");
 
 
     By cityDestination = By.id("toCity_chosen");
     By searchCityDestination = By.xpath("//*[@id=\"toCity_chosen\"]/div/div[1]/input");
     By clickOnCityDestination=By.xpath("//*[@id=\"toCity_chosen\"]/div/ul/li");
-   // By resultsForDestination = By.xpath("//ul[@class=\"chosen-results\"]");
 
     By clickOnChooseDate = By.id("departDate");
     By selectDate = By.xpath("//*[@id=\"ui-datepicker-div\"]/div[1]/table/tbody/tr[4]/td[7]/a");
@@ -27,7 +25,6 @@ public class BookingPage extends PageBase {
     By clickOnSelectSeatButton=By.xpath("//div[@class=\"selectbutton\" and text()='Select Seats']");
     By selectSeat=By.xpath("//div[@class=\"seatlook\" and text()='24']");
     By selectBoarding=By.xpath("//img[@src=\"https://assetsksrtc.iamgds.com/websearchnew/img/PickupIcon.svg\"]");
-    //By selectBoardingTime=By.xpath("//div[@//div[@class=\"col-time\"]");
     By selectBoardingTime=By.cssSelector("div.pick--val div.col-time");
     By selectDropping=By.xpath("//img[@src=\"https://assetsksrtc.iamgds.com/websearchnew/img/DropoffIcon.png\"]");
     By selectDroppingTime=By.cssSelector("div.drop--val");
