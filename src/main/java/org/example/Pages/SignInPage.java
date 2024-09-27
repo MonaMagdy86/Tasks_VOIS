@@ -3,7 +3,7 @@ package org.example.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SignInPage extends PagePase{
+public class SignInPage extends PageBase{
     By accountList =By.id("nav-link-accountList");
     By emailInput=By.id("ap_email");
     By continueButton=By.id("continue");

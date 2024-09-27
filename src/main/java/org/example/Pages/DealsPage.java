@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class DealsPage extends PagePase{
+public class DealsPage extends PageBase{
     By todaysLink=By.linkText("Today's Deals");
     By toaster=By.xpath("//input[@data-action-type=\"DISMISS\"]");
     // By todaysLink=By.xpath("//a[@data-csa-c-type='link' and text()='Today's Deals']");

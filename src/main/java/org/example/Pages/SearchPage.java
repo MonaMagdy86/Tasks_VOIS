@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import java.time.Duration;
 import java.util.List;
 
-public class SearchPage extends PagePase {
+public class SearchPage extends PageBase {
     By searchBox = By.id("twotabsearchtextbox");
     By searchButton = By.id("nav-search-submit-button");
     By addToCartButton=By.xpath("//button[@class=\"puis-atcb-container\"]");
