@@ -14,6 +14,7 @@ public class SearchPage extends PageBase {
     By cartIcon = By.id("nav-cart-count");
     By checkSubtotal=By.id("sc-subtotal-label-buybox");
     By toaster=By.xpath("//input[@data-action-type=\"DISMISS\"]");
+    By selectItem=By.xpath("//span[@class=\"a-size-base-plus a-color-base a-text-normal\" ]");
 
     public SearchPage(WebDriver driver) {
 
@@ -49,6 +50,13 @@ public class SearchPage extends PageBase {
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(addToCartButton))).click();
    */
     }
+    public void selectFirstItem(){
+        List<WebElement> elements =driver.findElements(selectItem);
+        WebElement firstElement = elements.get(0);
+        //System.out.println(firstElement.getText());
+        firstElement.click();
+    }
+
 
 
     public void clickOnCartIcon(){

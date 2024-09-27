@@ -7,10 +7,11 @@ import java.time.Duration;
 
 public class PageBase {
     protected static WebDriver driver;
-    WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(100));
+    WebDriverWait wait;
 
     public PageBase(WebDriver driver){
 
         this.driver =driver;
+        wait = new WebDriverWait(this.driver, Duration.ofSeconds(100));
     }
 }

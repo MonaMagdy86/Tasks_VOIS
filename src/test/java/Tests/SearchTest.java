@@ -9,8 +9,8 @@ public class SearchTest extends TestBase{
         searchPage.enterSearchValue("car accessories");
         searchPage.clickOnSearchButton();
         Assert.assertEquals(driver.getTitle(),"Amazon.com : car accessories");
-        // searchPage.dismissToaster();
-        searchPage.addToCart();
+        searchPage.selectFirstItem();
+       // searchPage.addToCart();
         //searchPage.clickOnCartIcon();
         //Assert.assertEquals(driver.getTitle(),"Amazon.com Shopping Cart");
         //Assert.assertTrue(searchPage.checkTotal());
