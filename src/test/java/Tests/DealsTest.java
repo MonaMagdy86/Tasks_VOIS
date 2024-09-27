@@ -12,8 +12,7 @@ public class DealsTest extends TestBase{
         dealsPage.clickOnSeeMore();
         dealsPage.selectGrocery();
         dealsPage.selectDiscount();
-        //dealsPage.selectPage();
-        // dealsPage.goToNextPage();
+        dealsPage.selectPage();
         dealsPage.selectItem();
     }
 }
