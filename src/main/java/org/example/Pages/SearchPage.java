@@ -15,6 +15,7 @@ public class SearchPage extends PageBase {
     By checkSubtotal=By.id("sc-subtotal-label-buybox");
     By toaster=By.xpath("//input[@data-action-type=\"DISMISS\"]");
     By selectItem=By.xpath("//span[@class=\"a-size-base-plus a-color-base a-text-normal\" ]");
+    By addItem=By.id("add-to-cart-button");
 
     public SearchPage(WebDriver driver) {
 
@@ -57,7 +58,10 @@ public class SearchPage extends PageBase {
         firstElement.click();
     }
 
-
+    public void addItemToCart(){
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(addItem)));
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(addItem))).click();
+    }
 
     public void clickOnCartIcon(){
         driver.findElement(cartIcon).click();
